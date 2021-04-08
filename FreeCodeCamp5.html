@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FreeCodeCamp5</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -9,8 +10,8 @@
         .body-style{
             width: 100%;
             max-width: 100%;
-            margin: 0;
-            padding: 0;
+            margin: 0 auto;
+            padding: 0 auto;
         }
         
         
@@ -20,10 +21,10 @@
             width: 100%;
             display: flex;
             background-color: rgb(145, 0, 0);
-            position: fixed;
             justify-content: flex-end;
             top: 0;
             left: 0;
+            position: fixed;
             }
         .nav-list{
             display: flex;
@@ -49,7 +50,6 @@
             height: 100vh;
             text-align: center;
             width: 100%;
-            font-size: 50px;
             background: rgb(0,0,0);
             background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(70,70,70,1) 50%);
             max-width: 100%;
@@ -62,6 +62,7 @@
             }
         .h1-name{
             margin: 0;
+            font-size: 60px;
         }
         .p1-name{
             margin: 0;
@@ -74,12 +75,10 @@
         .project-section{
             height: 100%;
             text-align: center;
-            background-color: rgb(170, 170, 170);
-            margin: 0;
-            padding: 1rem 2rem;
-            width: 100%;
-            color: white;
+            background: rgb(0,0,0);
+            background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(100,100,100,1) 50%);            width: 100%;
             max-width: 100%;
+            display: grid;
         }
         h2{
             text-align: center;
@@ -87,10 +86,8 @@
             padding-top: 50px;
         }
         .div-project{
-            margin: 0rem;
-            display: flex;
             width: 100%;
-            justify-items: center;
+            display: flex;
         }
         .project-tile{
             margin: 0rem;
@@ -99,10 +96,13 @@
             margin-bottom: 2em;
             padding: 0;
             width: 100%;
+            padding: 0.5rem;
         }
         .project-image{
-            width: 400px;
-            height: 400px;
+            width: 250px;
+            height: 250px;
+            width: 100%;
+            max-width: 100%;
         }
 
 
@@ -110,11 +110,9 @@
 
         .contact-section{
             width: 100%;
-            color: black;
-            background-color: rgb(199, 199, 199);
-            height: 100vh;
-            margin: 0;
-            padding: 1rem 2rem;
+            background: rgb(0,0,0);
+            background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(130,130,130,1) 50%);
+            height: 100%;
         }
         .h3-contact{
             font-size: 50px;
@@ -138,19 +136,6 @@
             align-items: center;
             justify-content: end;
             color: white;
-        }
-        .div-information{
-            height: 70%;
-            margin-top: 20px;
-        }
-        .information-image{
-            width: 300px;
-            margin: 0;
-            padding: 0;
-        }
-        .information{
-            margin-left: 310px;
-            position: absolute;
         }
     </style>
 </head>
@@ -178,30 +163,17 @@
         <h2>These are some of my projects</h2>
         <div class="div-project">
             <a id="CodePen" class="project-tile" target="_blank" href="https://codepen.io/Areo/pen/ExNQqOQ">
-                    <img class="project-image" src="https://images89.fotosik.pl/488/3dff91a2bdb6195egen.png" alt="project"/>
+                <img class="project-image" src="https://images89.fotosik.pl/488/3dff91a2bdb6195egen.png" alt="project"/>
             </a>
             <a id="CodePen" class="project-tile" target="_blank" href="https://codepen.io/Areo/pen/GRrKVPr">
-                    <img src="https://images92.fotosik.pl/488/d96fa6e2dc590781gen.png" alt="project-image" class="project-image">
+                <img src="https://images92.fotosik.pl/488/d96fa6e2dc590781gen.png" alt="project-image" class="project-image">
             </a>
             <a id="CodePen" class="project-tile" target="_blank" href="https://codepen.io/Areo/pen/ExNqmYP">
                 <img src="https://images90.fotosik.pl/487/221dbdaf0914577fgen.png" alt="project" class="project-image">
             </a>
-        </div>    
-        </class=>
+        </div>
     </section>
     <section class="contact-section" id="contact">
-        <div class="div-information">
-            <div class="information-image">
-                PLACE FOR PHOTO
-            </div>
-            <div class="information">
-                <h4>ABOUT ME</h4>
-                <ul>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-        </div>
         <div class="ending-contact">
             <div class="contact-header">
                 <h3 class="h3-contact">Let's work together...</h3>
